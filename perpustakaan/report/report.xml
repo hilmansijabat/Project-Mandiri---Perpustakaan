@@ -1,0 +1,14 @@
+<odoo>
+
+    <!-- Report Kelas -->
+    <record id="report_kelas_xlsx" model="ir.actions.report">
+        <field name="name">Kelas Excel</field>
+        <field name="model">perpustakaan.kelas</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">perpustakaan.report_kelas_xlsx</field>
+        <field name="report_file">perpustakaan.report_kelas_xlsx</field>
+        <field name="binding_model_id" ref="model_perpustakaan_kelas"/>
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>

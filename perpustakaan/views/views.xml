@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="perpustakaan.list">
+      <field name="name">perpustakaan list</field>
+      <field name="model">perpustakaan.perpustakaan</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="perpustakaan.action_window">
+      <field name="name">perpustakaan window</field>
+      <field name="res_model">perpustakaan.perpustakaan</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="perpustakaan.action_server">
+      <field name="name">perpustakaan server</field>
+      <field name="model_id" ref="model_perpustakaan_perpustakaan"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="perpustakaan" id="perpustakaan.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="perpustakaan.menu_1" parent="perpustakaan.menu_root"/>
+    <menuitem name="Menu 2" id="perpustakaan.menu_2" parent="perpustakaan.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="perpustakaan.menu_1_list" parent="perpustakaan.menu_1"
+              action="perpustakaan.action_window"/>
+    <menuitem name="Server to list" id="perpustakaan" parent="perpustakaan.menu_2"
+              action="perpustakaan.action_server"/>
+-->
+  </data>
+</odoo>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="perpustakaan_menu_root"
+        name="Perpustakaan"
+        sequence="10"/>
+
+    <menuitem
+        id="perpustakaan_buku_menu_categ"
+        name="Buku"
+        parent="perpustakaan_menu_root"
+        sequence="10"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem
+        id="perpustakaan_pegawai_menu_categ"
+        name="Staff Perpustakaan"
+        parent="perpustakaan_menu_root"
+        sequence="20"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem
+        id="perpustakaan_peminjaman_menu_categ"
+        name="Peminjaman"
+        parent="perpustakaan_menu_root"
+        sequence="42"/>
+
+</odoo>

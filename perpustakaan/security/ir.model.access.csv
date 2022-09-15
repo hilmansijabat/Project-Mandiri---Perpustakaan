@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_perpustakaan_kelompokbuku,access.perpustakaan.kelompokbuku,model_perpustakaan_kelompokbuku,,1,1,1,1
+access_perpustakaan_buku,access.perpustakaan.buku,model_perpustakaan_buku,,1,1,1,1
+access_perpustakaan_person,access.perpustakaan.person,model_perpustakaan_person,,1,1,1,1
+access_perpustakaan_kepalaperpustakaan,access.perpustakaan.kepalaperpustakaan,model_perpustakaan_kepalaperpustakaan,,1,1,1,1
+access_perpustakaan_pustakawan,access.perpustakaan.pustakawan,model_perpustakaan_pustakawan,,1,1,1,1
+access_perpustakaan_kelas,access.perpustakaan.kelas,model_perpustakaan_kelas,,1,1,1,1
+access_perpustakaan_peminjaman,access.perpustakaan.peminjaman,model_perpustakaan_peminjaman,,1,1,1,1
+access_perpustakaan_detailpeminjaman,access.perpustakaan.detailpeminjaman,model_perpustakaan_detailpeminjaman,,1,1,1,1
+access_perpustakaaan_bukudatang,access.perpustakaan.bukudatang,model_perpustakaan_bukudatang,,1,1,1,1

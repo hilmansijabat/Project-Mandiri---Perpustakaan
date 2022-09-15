@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- perpustakaan.kelas tree view -->
+    <record id="perpustakaan_kelas_view_tree" model="ir.ui.view">
+        <field name="name">Daftar Kelas</field>
+        <field name="model">perpustakaan.kelas</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name" />
+                <field name="jurusan" />
+                <field name="fakultas" />
+                <field name="buku_id" />
+                <field name="buku_id" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- perpustakaan.kelas form view -->
+    <record id="perpustakaan_kelas_view_form" model="ir.ui.view">
+        <field name="name">Form Kelas</field>
+        <field name="model">perpustakaan.kelas</field>
+        <field name="arch" type="xml">
+            <form string="Kelas">
+                <sheet>
+                    <group>
+                        <!-- Add your fields here -->
+                        <field name="name" />
+                        <field name="jurusan" />
+                        <field name="fakultas" />
+                    </group>
+                    <group name="buku" string="Buku">
+                        <field name="buku_id" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- perpustakaan.kelas action window -->
+    <record id="perpustakaan_kelas_action" model="ir.actions.act_window">
+        <field name="name">Kelas</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">perpustakaan.kelas</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="perpustakaan_kelas_menu_act" 
+        name="Kelas" 
+        parent="perpustakaan_menu_root" 
+        action="perpustakaan_kelas_action" 
+        sequence="40"/>
+
+</odoo>

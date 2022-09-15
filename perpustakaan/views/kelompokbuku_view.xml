@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="perpustakaan_kelompokbuku_view_tree" model="ir.ui.view">
+        <field name="name">perpustakaan.kelompokbuku.view.tree</field>
+        <field name="model">perpustakaan.kelompokbuku</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="kode_kelompok"/>
+                <field name="kode_rak"/>
+                <field name="jml_item" />
+                <field name="daftar" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- perpustakaaan.kelompokbuku form view -->
+    <record id="perpustakaan_kelompokbuku" model="ir.ui.view">
+        <field name="name">perpustakaan.kelompokbuku.view.form</field>
+        <field name="model">perpustakaan.kelompokbuku</field>
+        <field name="arch" type="xml">
+            <form string="Kelompok Buku">
+                <sheet>
+                    <group name="Kelompok" string="Posisi Kelompok">
+                        <field name="name"/>
+                        <field name="kode_kelompok"/>
+                        <field name="jml_item" />
+                    </group>
+
+                    <group name="Rak" string="Posisi Buku">
+                        <field name="kode_rak"/>
+                        <field name="buku_ids" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- perpustakaan.kelompokbuku action window -->
+    <record id="perpustakaan_kelompokbuku_action" model="ir.actions.act_window">
+        <field name="name">Kelompok Buku</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">perpustakaan.kelompokbuku</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="perpustakaan_kelompokbuku_menu_act"
+        name="Kelompok Buku"
+        parent="perpustakaan_buku_menu_categ"
+        action="perpustakaan_kelompokbuku_action"
+        sequence="10"/>
+
+</odoo>
